@@ -293,6 +293,38 @@ LOCK TABLES `juego` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `preguntas`
+--
+
+DROP TABLE IF EXISTS `preguntas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `preguntas` (
+  `ID_pregunta` int NOT NULL AUTO_INCREMENT,
+  `ID_puesto` int NOT NULL,
+  `Texto_pregunta` varchar(150) NOT NULL,
+  `Respuesta_Correcta` varchar(100) NOT NULL,
+  `Respuesta_1` varchar(100) NOT NULL,
+  `Respuesta_2` varchar(100) NOT NULL,
+  `Respuesta_3` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID_pregunta`,`ID_puesto`),
+  UNIQUE KEY `ID_pregunta_UNIQUE` (`ID_pregunta`),
+  KEY `ID_puesto_idx` (`ID_puesto`),
+  CONSTRAINT `ID_puesto` FOREIGN KEY (`ID_puesto`) REFERENCES `puestos` (`ID_puesto`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `preguntas`
+--
+
+LOCK TABLES `preguntas` WRITE;
+/*!40000 ALTER TABLE `preguntas` DISABLE KEYS */;
+INSERT INTO `preguntas` VALUES (1,1,' It\'s a collection of data items organized as a set of tables with columns and rows with pre-defined relationships between them','b) Relational database','a) Structured Query Language','c) Data warehouse','d) Non-relational database');
+/*!40000 ALTER TABLE `preguntas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `puestos`
 --
 
@@ -378,4 +410,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-31 14:33:55
+-- Dump completed on 2022-05-31 18:45:12
