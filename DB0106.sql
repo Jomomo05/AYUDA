@@ -30,7 +30,7 @@ CREATE TABLE `carrera` (
   PRIMARY KEY (`ID_carrera`),
   UNIQUE KEY `Nombre_carrera_UNIQUE` (`Nombre_carrera`),
   UNIQUE KEY `ID_carrera_UNIQUE` (`ID_carrera`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `carrera` (
 
 LOCK TABLES `carrera` WRITE;
 /*!40000 ALTER TABLE `carrera` DISABLE KEYS */;
-INSERT INTO `carrera` VALUES (1,'Hello'),(2,'ITC');
+INSERT INTO `carrera` VALUES (1,'Hello'),(5,'ICT'),(2,'ITC'),(6,'ITD');
 /*!40000 ALTER TABLE `carrera` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -67,7 +67,7 @@ CREATE TABLE `datospersonales` (
 
 LOCK TABLES `datospersonales` WRITE;
 /*!40000 ALTER TABLE `datospersonales` DISABLE KEYS */;
-INSERT INTO `datospersonales` VALUES (2,'Tuleperapapaya','Tuleperapapaya','Tuleperapapaya','2002-01-01'),(3,'Holamundo','Holamundo','Holamundo','2002-01-01'),(4,'Funcionaolloro','Funcionaolloro','Funcionaolloro','2002-01-01'),(12,'Hola','Hola','Hola','2002-01-01'),(14,'DINOSAURIO','DINOSAURIO','DINOSAURIO','2007-07-07'),(15,'BIBLIOTECA','BIBLIOTECA','BIBLIOTECA','2002-01-01'),(18,'Me quiero morir','Me quiero morir','Me quiero morir','2002-01-01'),(19,'vivilavida','vivilavida','vivilavida','2002-01-01'),(20,'FUNCIONAXFA','FUNCIONAXFA','FUNCIONAXFA','2002-01-01'),(21,'UNAMIGO','UNAMIGO','UNAMIGO','2002-01-01'),(22,'UNAVIDA','UNAVIDA','UNAVIDA','2002-06-19'),(23,'Holamundo','Hello','Hello','2002-01-01'),(24,'Bob Esponja','Pantalones','Cuadrados','2002-01-01'),(25,'Calamardo','Tentaculos','Unodostres','2002-01-01'),(26,'Franisco','Nose','Queponer','2002-01-01'),(27,'ad','asd','ads','2002-01-01');
+INSERT INTO `datospersonales` VALUES (2,'Tuleperapapaya','Tuleperapapaya','Tuleperapapaya','2002-01-01'),(3,'Holamundo','Holamundo','Holamundo','2002-01-01'),(4,'Funcionaolloro','Funcionaolloro','Funcionaolloro','2002-01-01'),(12,'Hola','Hola','Hola','2002-01-01'),(14,'DINOSAURIO','DINOSAURIO','DINOSAURIO','2007-07-07'),(15,'BIBLIOTECA','BIBLIOTECA','BIBLIOTECA','2002-01-01'),(18,'Me quiero morir','Me quiero morir','Me quiero morir','2002-01-01'),(19,'vivilavida','vivilavida','vivilavida','2002-01-01'),(20,'FUNCIONAXFA','FUNCIONAXFA','FUNCIONAXFA','2002-01-01'),(21,'UNAMIGO','UNAMIGO','UNAMIGO','2002-01-01'),(22,'UNAVIDA','UNAVIDA','UNAVIDA','2002-06-19'),(23,'Holamundo','Hello','Hello','2002-01-01'),(24,'Bob Esponja','Pantalones','Cuadrados','2002-01-01'),(25,'Calamardo','Tentaculos','Unodostres','2002-01-01'),(26,'Franisco','Nose','Queponer','2002-01-01'),(27,'ad','asd','ads','2002-01-01'),(28,'noes','noes','noes','2002-01-09'),(29,'Jose Miguel','Beltran','Cinco','2002-06-19'),(30,'sfsf','sfsf','sfsf','2002-01-01');
 /*!40000 ALTER TABLE `datospersonales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,7 +152,7 @@ CREATE TABLE `experiencialaboral` (
 
 LOCK TABLES `experiencialaboral` WRITE;
 /*!40000 ALTER TABLE `experiencialaboral` DISABLE KEYS */;
-INSERT INTO `experiencialaboral` VALUES (25,1,'Estudiante','Nada, era intern','2004-04-04','2006-05-05'),(26,4,'Java','Nose','2009-09-09','2010-09-09');
+INSERT INTO `experiencialaboral` VALUES (25,1,'Estudiante','Nada, era intern','2004-04-04','2006-05-05'),(26,4,'Java','Nose','2009-09-09','2010-09-09'),(29,3,'Intern de Residencias','Mantenimiento de la plataforma de residencias del tec','2021-06-01','2022-06-02'),(30,3,'puesto','descripcion','2202-02-01','2002-02-02');
 /*!40000 ALTER TABLE `experiencialaboral` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `formacionacademica` (
 
 LOCK TABLES `formacionacademica` WRITE;
 /*!40000 ALTER TABLE `formacionacademica` DISABLE KEYS */;
-INSERT INTO `formacionacademica` VALUES (24,2,'Tec de Mty','2002-01-01','2003-01-01'),(25,2,'Tec de Mty','2002-02-02','2003-03-03'),(26,2,'Tec','2003-02-02','2004-02-02');
+INSERT INTO `formacionacademica` VALUES (24,2,'Tec de Mty','2002-01-01','2003-01-01'),(25,2,'Tec de Mty','2002-02-02','2003-03-03'),(26,2,'Tec','2003-02-02','2004-02-02'),(29,5,'Tec de Mty','2021-08-08','2024-06-06'),(30,6,'TEC','2002-01-01','0202-01-01');
 /*!40000 ALTER TABLE `formacionacademica` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -259,7 +259,7 @@ CREATE TABLE `informacioncontacto` (
 
 LOCK TABLES `informacioncontacto` WRITE;
 /*!40000 ALTER TABLE `informacioncontacto` DISABLE KEYS */;
-INSERT INTO `informacioncontacto` VALUES (2,'12345678',' Tuleperapapaya'),(3,'64417106785','Holamundo'),(4,'Funcionaolloro','Funcionaolloro'),(19,'6441710685','vivilavida'),(20,'6441710685','FUNCIONAXFA'),(21,'UNAMIGO','UNAMIGO'),(22,'6441710685','UNAVIDA'),(23,'6441710674','Hello'),(24,'6441710685','Casaamarilla'),(25,'64412345','Aunladodebob'),(26,'6441710685','Tecnose');
+INSERT INTO `informacioncontacto` VALUES (2,'12345678',' Tuleperapapaya'),(3,'64417106785','Holamundo'),(4,'Funcionaolloro','Funcionaolloro'),(19,'6441710685','vivilavida'),(20,'6441710685','FUNCIONAXFA'),(21,'UNAMIGO','UNAMIGO'),(22,'6441710685','UNAVIDA'),(23,'6441710674','Hello'),(24,'6441710685','Casaamarilla'),(25,'64412345','Aunladodebob'),(26,'6441710685','Tecnose'),(29,'6441710685','Marsella 3122'),(30,'12231322','31131');
 /*!40000 ALTER TABLE `informacioncontacto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -388,7 +388,7 @@ CREATE TABLE `usuarios` (
   `Tipo` varchar(20) NOT NULL DEFAULT 'aplicante',
   PRIMARY KEY (`IDusuario`),
   UNIQUE KEY `correo_UNIQUE` (`Correo`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +397,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'1234','6789','aplicante'),(2,'232','2323','aplicante'),(3,'343','2222','aplicante'),(4,'a00227714@itesm.mx','12345','aplicante'),(5,'34343@hotmail.com','12345','aplicante'),(8,'a23@tec.mx','2323','aplicante'),(9,'34343344@gmail.com','232323','aplicante'),(10,'33333@hotmail.com','2323','aplicante'),(12,'12@tec.mx','1212','aplicante'),(14,'2@sd','123','aplicante'),(15,'232@t','12','aplicante'),(16,'2323232@tec.mx','2222','aplicante'),(18,'hola@tec.mx','123456','aplicante'),(19,'eduardo@tec.mx','12345','aplicante'),(20,'eduardoflores@gmail.com','7890','aplicante'),(21,'holauwu@tec.mx','3232','aplicante'),(22,'dinosaurio@tec.mx','1234','aplicante'),(23,'nose@tec.mx','1234','aplicante'),(24,'Patricioestrella@tec.mx','1234','aplicante'),(25,'bobtoronja@tec.mx','1234','aplicante'),(26,'Franchis@tec.mx','6789','aplicante'),(27,'atox@tec.mx','1234','aplicante'),(28,'noes@tec.mx','1234','aplicante');
+INSERT INTO `usuarios` VALUES (1,'1234','6789','aplicante'),(2,'232','2323','aplicante'),(3,'343','2222','aplicante'),(4,'a00227714@itesm.mx','12345','aplicante'),(5,'34343@hotmail.com','12345','aplicante'),(8,'a23@tec.mx','2323','aplicante'),(9,'34343344@gmail.com','232323','aplicante'),(10,'33333@hotmail.com','2323','aplicante'),(12,'12@tec.mx','1212','aplicante'),(14,'2@sd','123','aplicante'),(15,'232@t','12','aplicante'),(16,'2323232@tec.mx','2222','aplicante'),(18,'hola@tec.mx','123456','aplicante'),(19,'eduardo@tec.mx','12345','aplicante'),(20,'eduardoflores@gmail.com','7890','aplicante'),(21,'holauwu@tec.mx','3232','aplicante'),(22,'dinosaurio@tec.mx','1234','aplicante'),(23,'nose@tec.mx','1234','aplicante'),(24,'Patricioestrella@tec.mx','1234','aplicante'),(25,'bobtoronja@tec.mx','1234','aplicante'),(26,'Franchis@tec.mx','6789','aplicante'),(27,'atox@tec.mx','1234','aplicante'),(28,'noes@tec.mx','1234','aplicante'),(29,'ciclo2@tec.mx','1234','aplicante'),(30,'pruebafinal@tec.mx','1234','aplicante');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -410,4 +410,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-01  1:14:11
+-- Dump completed on 2022-06-01 12:47:10
